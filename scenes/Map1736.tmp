@@ -1,0 +1,270 @@
+[gd_scene load_steps=23 format=3 uid="uid://tha5nd1itpbm"]
+
+[ext_resource type="Script" path="res://scripts/Map.gd" id="1_1namu"]
+[ext_resource type="Texture2D" uid="uid://bj3ji1ety7wyu" path="res://gfx/tilemaps/wang_abstract.png" id="2_g07rx"]
+[ext_resource type="PackedScene" uid="uid://dsm48oyku43p2" path="res://wang/wang_tile.tscn" id="3_jiiq0"]
+[ext_resource type="Script" path="res://scripts/Resource/WangTileResource.gd" id="4_j04mj"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1a2rq"]
+texture = ExtResource("2_g07rx")
+use_texture_padding = false
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:0/0 = 0
+3:1/0 = 0
+3:2/0 = 0
+3:3/0 = 0
+3:4/0 = 0
+3:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_enpet"]
+sources/0 = SubResource("TileSetAtlasSource_1a2rq")
+
+[sub_resource type="Resource" id="Resource_iyojd"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 1
+right = 0
+bottom = 0
+left = 0
+location = Vector2i(0, 0)
+TileType = 0
+
+[sub_resource type="Resource" id="Resource_50i11"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 0
+right = 1
+bottom = 0
+left = 0
+location = Vector2i(1, 0)
+TileType = 1
+
+[sub_resource type="Resource" id="Resource_hrdax"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 0
+right = 0
+bottom = 1
+left = 0
+location = Vector2i(2, 0)
+TileType = 2
+
+[sub_resource type="Resource" id="Resource_jcxug"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 0
+right = 0
+bottom = 0
+left = 1
+location = Vector2i(3, 0)
+TileType = 3
+
+[sub_resource type="Resource" id="Resource_oekw6"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 1
+right = 1
+bottom = 0
+left = 0
+location = Vector2i(0, 1)
+TileType = 4
+
+[sub_resource type="Resource" id="Resource_luvke"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 0
+right = 1
+bottom = 1
+left = 0
+location = Vector2i(1, 1)
+TileType = 5
+
+[sub_resource type="Resource" id="Resource_d443x"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 0
+right = 0
+bottom = 1
+left = 1
+location = Vector2i(2, 1)
+TileType = 6
+
+[sub_resource type="Resource" id="Resource_tucnl"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 1
+right = 0
+bottom = 0
+left = 1
+location = Vector2i(3, 1)
+TileType = 7
+
+[sub_resource type="Resource" id="Resource_gg7fc"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 1
+right = 1
+bottom = 1
+left = 0
+location = Vector2i(0, 2)
+TileType = 8
+
+[sub_resource type="Resource" id="Resource_ip8xb"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 0
+right = 1
+bottom = 1
+left = 1
+location = Vector2i(1, 2)
+TileType = 9
+
+[sub_resource type="Resource" id="Resource_vf0at"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 1
+right = 0
+bottom = 1
+left = 1
+location = Vector2i(2, 2)
+TileType = 10
+
+[sub_resource type="Resource" id="Resource_wx28l"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 1
+right = 1
+bottom = 0
+left = 1
+location = Vector2i(3, 2)
+TileType = 11
+
+[sub_resource type="Resource" id="Resource_qjht0"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 1
+right = 0
+bottom = 1
+left = 0
+location = Vector2i(0, 3)
+TileType = 12
+
+[sub_resource type="Resource" id="Resource_gfcuq"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 0
+right = 1
+bottom = 0
+left = 1
+location = Vector2i(1, 3)
+TileType = 13
+
+[sub_resource type="Resource" id="Resource_h4yyg"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 0
+right = 0
+bottom = 0
+left = 0
+location = Vector2i(2, 3)
+TileType = 14
+
+[sub_resource type="Resource" id="Resource_pkbw6"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 0
+right = 0
+bottom = 0
+left = 0
+location = Vector2i(3, 3)
+TileType = 15
+
+[node name="Map" type="Node2D"]
+script = ExtResource("1_1namu")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_enpet")
+format = 2
+layer_0/name = "Base"
+
+[node name="Tiles" type="Node" parent="."]
+
+[node name="WangTile1" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_iyojd")
+
+[node name="WangTile2" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_50i11")
+
+[node name="WangTile3" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_hrdax")
+
+[node name="WangTile4" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_jcxug")
+
+[node name="WangTile5" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_oekw6")
+
+[node name="WangTile6" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_luvke")
+
+[node name="WangTile7" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_d443x")
+
+[node name="WangTile8" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_tucnl")
+
+[node name="WangTile9" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_gg7fc")
+
+[node name="WangTile10" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_ip8xb")
+
+[node name="WangTile11" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_vf0at")
+
+[node name="WangTile12" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_wx28l")
+
+[node name="WangTile13" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_qjht0")
+
+[node name="WangTile14" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_gfcuq")
+
+[node name="WangTile15" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_h4yyg")
+
+[node name="WangTile16" parent="Tiles" instance=ExtResource("3_jiiq0")]
+res = SubResource("Resource_pkbw6")

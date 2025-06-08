@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CharacterResource" load_steps=2 format=3 uid="uid://daeym7o5qp6ci"]
+
+[ext_resource type="Script" uid="uid://c3iqvw2xch4s" path="res://scripts/Resource/CharacterResource.gd" id="1_44i5s"]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("1_44i5s")
+name = "anotherFrog"
+health = 50
+strength = 5
+speed = 0

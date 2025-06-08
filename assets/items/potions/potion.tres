@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=3 format=3 uid="uid://wwtxpbbn1n3d"]
+
+[ext_resource type="Script" uid="uid://bhds83bt3wpwb" path="res://scripts/Resource/ItemResource.gd" id="1_nfent"]
+[ext_resource type="Texture2D" uid="uid://dvejoauajo030" path="res://gfx/potion.png" id="2_3ynhi"]
+
+[resource]
+script = ExtResource("1_nfent")
+name = "potion"
+texture = ExtResource("2_3ynhi")
+can_drop = true
+container = ""
+containerPosition = 0
+metadata/_custom_type_script = "uid://bhds83bt3wpwb"

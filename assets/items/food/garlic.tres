@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=3 format=3 uid="uid://dm6x2bso512ss"]
+
+[ext_resource type="Script" uid="uid://bhds83bt3wpwb" path="res://scripts/Resource/ItemResource.gd" id="1_ck7lx"]
+[ext_resource type="Texture2D" uid="uid://21thga8bdcnv" path="res://gfx/garlic_icon.png" id="2_w5h14"]
+
+[resource]
+script = ExtResource("1_ck7lx")
+name = "garlic"
+texture = ExtResource("2_w5h14")
+container = ""
+containerPosition = 0
+metadata/_custom_type_script = "uid://bhds83bt3wpwb"

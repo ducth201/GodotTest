@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=3 format=3 uid="uid://b3j1vdvi1qvtq"]
+
+[ext_resource type="Script" uid="uid://bhds83bt3wpwb" path="res://scripts/Resource/ItemResource.gd" id="1_etfvf"]
+[ext_resource type="Texture2D" uid="uid://fkw8qixthsii" path="res://gfx/potion_small.png" id="2_nkquv"]
+
+[resource]
+script = ExtResource("1_etfvf")
+name = "Small potion"
+texture = ExtResource("2_nkquv")
+can_drop = true
+can_stack = true
+max_stack_size = 10
+cur_stack_size = 1
+container = ""
+containerPosition = 0
+metadata/_custom_type_script = "uid://bhds83bt3wpwb"

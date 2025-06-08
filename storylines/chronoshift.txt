@@ -1,0 +1,36 @@
+In "ChronoShift: Rogue Timeline," you play as a rogue time-traveler, exploring various timelines and altering historical events to your advantage. Your name is Dr. Eon, a brilliant scientist who discovered the secret to time-travel after years of research. However, your unorthodox methods and disregard for the ethics of time-travel have led to your exile from the scientific community.
+
+Your journey begins in the year 2150, in a dystopian world ruled by a tyrannical regime. You steal a time-travel device from your former lab and set off on a quest to change the course of history and create a better future.
+
+As you travel through time, you encounter various challenges and enemies. Powerful time-keepers seek to prevent you from altering the timelines, while rogue factions try to exploit the power of time-travel for their own gain. Along the way, you recruit allies from different timelines, each with their unique abilities and skills.
+
+In each level, you must traverse a randomized timeline, fighting off enemies, collecting power-ups, and making critical decisions that impact the story. Your actions have permanent consequences, and the choices you make can lead to different outcomes.
+
+One level takes you to the ancient city of Atlantis during its prime. Here, you must navigate treacherous underwater corridors, battle aquatic beasts, and uncover the city's long-lost secrets. Another level sends you to a post-apocalyptic wasteland, where you must scavenge for resources, fortify your base, and fend off hordes of mutated creatures.
+
+Throughout the game, you collect powerful artifacts and upgrades that enhance your abilities and make you a formidable force in the timelines. However, each action you take and each artifact you collect carries a risk. The time-keepers grow stronger with each alteration, and the consequences of your actions may be more severe than you anticipated.
+
+In the end, your actions will determine the fate of the timelines and the future of humanity. Will you restore balance to the timelines, or will you become the rogue timeline's greatest threat? The choice is yours in "ChronoShift: Rogue Timeline."
+
+
+possible game mechanics:
+
+1)Time Travel: The player can travel through time to different eras, each with its own unique environments, enemies, and loot. As the player travels through time, they may encounter different versions of themselves and other characters, creating opportunities for branching storylines and unique encounters.
+2)Permanent Death: In the rogue-lite style, when the player dies, they lose all progress and must start from the beginning. However, the player retains certain upgrades and abilities earned from previous runs, allowing them to progress further each time.
+3)Time Loops: The player can create time loops, repeating certain sections of time to gain advantages and progress further. The player can manipulate the timeline to their advantage, such as luring enemies into traps or triggering environmental hazards at the right moment.
+4)Time Manipulation: The player has the ability to manipulate time, such as slowing down or speeding up time to gain an advantage in combat or exploration. The player can also rewind time to correct mistakes or avoid danger.
+5)Skills and Abilities: As the player progresses, they earn new skills and abilities, such as time manipulation powers or unique weapons and gear. These skills can be upgraded and customized to fit the player's playstyle.
+6)Environment Interactions: The player can interact with the environment in unique ways, such as manipulating objects or revealing hidden paths. The environment can also change and evolve over time, revealing new areas and secrets.
+7)Branching Storylines: The player's choices and actions can affect the story and create branching pathways. The player can encounter different characters and events, each with their own consequences and rewards.
+8)Randomized Levels: To keep the game fresh and challenging, the levels can be randomly generated with each playthrough, creating unique layouts and challenges. The player can also discover hidden areas and secrets, adding to the game's replayability.
+9)Multiplayer: The game could include multiplayer elements, such as competitive or cooperative play. Players could team up to take on challenging levels or compete against each other in time-based challenges.
+10)Time-based Challenges: The player can participate in time-based challenges, such as racing against the clock or surviving waves of enemies. These challenges can offer unique rewards and increase the game's replayability.
+
+possible character traits:"
+
+1)Adaptability: The ability to quickly adjust to new situations and environments is crucial for a time-travelling rogue-lite game, where the player may encounter different eras and challenges.
+2)Cunning: A rogue-lite game often requires the player to outsmart their enemies, and this trait can be especially important in a time-travelling setting where the player may need to manipulate the timeline to their advantage.
+3)Curiosity: A strong desire to explore and discover new things can help drive the player to seek out new timelines and uncover hidden secrets.
+4)Resilience: The ability to bounce back from setbacks and keep going, even when things seem dire, is an important trait for any rogue-lite game.
+5)Skepticism: A healthy dose of skepticism can help the player question the motives of the time-traveling faction they may encounter and make informed decisions about how to proceed.
+6)Resourcefulness: The ability to make the most of limited resources is essential in a rogue-lite game, and can be especially important in a time-travelling setting where the player may find themselves in unfamiliar territory.

@@ -1,0 +1,118 @@
+[gd_scene load_steps=14 format=3 uid="uid://dgp3uwamvpynq"]
+
+[ext_resource type="Script" uid="uid://be5m2t8fwl1fy" path="res://scripts/Level.gd" id="1_rxwqw"]
+[ext_resource type="Script" uid="uid://bhds83bt3wpwb" path="res://scripts/Resource/ItemResource.gd" id="2_070rk"]
+[ext_resource type="PackedScene" uid="uid://b1sspjte7g4oh" path="res://assets/characters/frog/frog.tscn" id="2_v52pn"]
+[ext_resource type="PackedScene" uid="uid://v2gpawn82cg5" path="res://assets/characters/player/player.tscn" id="4_r4djr"]
+[ext_resource type="Texture2D" uid="uid://b053flxhcm7au" path="res://gfx/light.png" id="5_h8tnp"]
+[ext_resource type="PackedScene" uid="uid://dq6kvk3oi05bq" path="res://assets/items/pickup/pickup.tscn" id="6_070rk"]
+[ext_resource type="PackedScene" uid="uid://wjpp7uvof0j8" path="res://assets/inventory/inventory.tscn" id="6_pewrh"]
+[ext_resource type="Resource" uid="uid://b3j1vdvi1qvtq" path="res://assets/items/potions/potion_small.tres" id="7_h8tnp"]
+
+[sub_resource type="Resource" id="Resource_8luvy"]
+script = ExtResource("2_070rk")
+name = "chest"
+can_drop = false
+max_stack_size = 0
+cur_stack_size = 0
+container = ""
+containerPosition = 0
+metadata/_custom_type_script = "uid://bhds83bt3wpwb"
+
+[sub_resource type="Resource" id="Resource_ak4i2"]
+script = ExtResource("2_070rk")
+name = "garlic"
+can_drop = false
+max_stack_size = 0
+cur_stack_size = 0
+container = ""
+containerPosition = 0
+metadata/_custom_type_script = "uid://bhds83bt3wpwb"
+
+[sub_resource type="Environment" id="Environment_070rk"]
+glow_enabled = true
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_h8tnp"]
+
+[sub_resource type="Compositor" id="Compositor_8luvy"]
+
+[node name="Playground" type="Node2D"]
+script = ExtResource("1_rxwqw")
+Items = Array[ExtResource("2_070rk")]([SubResource("Resource_8luvy"), SubResource("Resource_ak4i2")])
+
+[node name="frog" parent="." instance=ExtResource("2_v52pn")]
+position = Vector2(-110, -31)
+
+[node name="frog2" parent="." instance=ExtResource("2_v52pn")]
+position = Vector2(-6, 5)
+
+[node name="frog3" parent="." instance=ExtResource("2_v52pn")]
+position = Vector2(144, 1)
+
+[node name="player" parent="." instance=ExtResource("4_r4djr")]
+position = Vector2(67, -32)
+
+[node name="PointLight2D" type="PointLight2D" parent="player"]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(-1, -2)
+scale = Vector2(0.261719, 0.261719)
+energy = 4.49
+range_item_cull_mask = 2
+texture = ExtResource("5_h8tnp")
+
+[node name="CanvasGroup" type="CanvasGroup" parent="."]
+
+[node name="Pickup" parent="CanvasGroup" instance=ExtResource("6_070rk")]
+position = Vector2(-193, -92)
+item = ExtResource("7_h8tnp")
+
+[node name="Pickup2" parent="CanvasGroup" instance=ExtResource("6_070rk")]
+position = Vector2(-165, -91)
+item = ExtResource("7_h8tnp")
+
+[node name="Pickup3" parent="CanvasGroup" instance=ExtResource("6_070rk")]
+position = Vector2(-128, -92)
+item = ExtResource("7_h8tnp")
+
+[node name="Pickup4" parent="CanvasGroup" instance=ExtResource("6_070rk")]
+position = Vector2(-80, -93)
+item = ExtResource("7_h8tnp")
+
+[node name="Pickup5" parent="CanvasGroup" instance=ExtResource("6_070rk")]
+position = Vector2(-84, -60)
+item = ExtResource("7_h8tnp")
+
+[node name="Pickup6" parent="CanvasGroup" instance=ExtResource("6_070rk")]
+position = Vector2(-115, -60)
+item = ExtResource("7_h8tnp")
+
+[node name="Pickup7" parent="CanvasGroup" instance=ExtResource("6_070rk")]
+position = Vector2(-154, -59)
+item = ExtResource("7_h8tnp")
+
+[node name="Pickup8" parent="CanvasGroup" instance=ExtResource("6_070rk")]
+position = Vector2(-180, -60)
+item = ExtResource("7_h8tnp")
+
+[node name="Pickup9" parent="CanvasGroup" instance=ExtResource("6_070rk")]
+position = Vector2(-216, -60)
+item = ExtResource("7_h8tnp")
+
+[node name="Pickup10" parent="CanvasGroup" instance=ExtResource("6_070rk")]
+position = Vector2(-242, -61)
+item = ExtResource("7_h8tnp")
+
+[node name="Inventory" parent="." instance=ExtResource("6_pewrh")]
+offset_left = -81.0
+offset_top = -149.0
+offset_right = 81.0
+offset_bottom = -125.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_070rk")
+camera_attributes = SubResource("CameraAttributesPractical_h8tnp")
+compositor = SubResource("Compositor_8luvy")

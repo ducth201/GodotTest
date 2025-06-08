@@ -1,0 +1,67 @@
+[gd_scene load_steps=5 format=3 uid="uid://wjpp7uvof0j8"]
+
+[ext_resource type="Texture2D" uid="uid://bkns3ww0s1w4n" path="res://assets/inventory/inventory_texture.png" id="1_qw0r6"]
+[ext_resource type="Texture2D" uid="uid://cwwditev6odqq" path="res://gfx/chest_icon.png" id="2_4rclm"]
+[ext_resource type="Script" uid="uid://dm23p0f1s2sck" path="res://assets/inventory/inventory.gd" id="2_u4acj"]
+[ext_resource type="Texture2D" uid="uid://21thga8bdcnv" path="res://gfx/garlic_icon.png" id="3_lccwh"]
+
+[node name="TextureRect" type="TextureRect"]
+texture_filter = 1
+offset_right = 442.0
+offset_bottom = 64.0
+texture = ExtResource("1_qw0r6")
+stretch_mode = 1
+script = ExtResource("2_u4acj")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_constants/h_separation = -1
+theme_override_constants/v_separation = -1
+columns = 7
+
+[node name="ItemSlot" type="TextureRect" parent="GridContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+texture = ExtResource("2_4rclm")
+expand_mode = 1
+
+[node name="ItemSlot2" type="TextureRect" parent="GridContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+texture = ExtResource("3_lccwh")
+expand_mode = 1
+
+[node name="ItemSlot3" type="TextureRect" parent="GridContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+expand_mode = 1
+
+[node name="ItemSlot4" type="TextureRect" parent="GridContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+expand_mode = 1
+
+[node name="ItemSlot5" type="TextureRect" parent="GridContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+expand_mode = 1
+
+[node name="ItemSlot6" type="TextureRect" parent="GridContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+expand_mode = 1
+
+[node name="ItemSlot7" type="TextureRect" parent="GridContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+expand_mode = 1

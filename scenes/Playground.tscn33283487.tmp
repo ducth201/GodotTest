@@ -1,0 +1,44 @@
+[gd_scene load_steps=8 format=3 uid="uid://dgp3uwamvpynq"]
+
+[ext_resource type="Script" uid="uid://be5m2t8fwl1fy" path="res://scripts/Level.gd" id="1_rxwqw"]
+[ext_resource type="Script" uid="uid://bhds83bt3wpwb" path="res://scripts/Resource/ItemResource.gd" id="2_070rk"]
+[ext_resource type="PackedScene" uid="uid://b1sspjte7g4oh" path="res://assets/characters/frog/frog.tscn" id="2_v52pn"]
+[ext_resource type="PackedScene" uid="uid://v2gpawn82cg5" path="res://assets/characters/player/player.tscn" id="4_r4djr"]
+[ext_resource type="PackedScene" uid="uid://wjpp7uvof0j8" path="res://assets/inventory/inventory.tscn" id="6_pewrh"]
+
+[sub_resource type="Resource" id="Resource_8luvy"]
+script = ExtResource("2_070rk")
+name = "chest"
+can_drop = false
+container = ""
+containerPosition = 0
+metadata/_custom_type_script = "uid://bhds83bt3wpwb"
+
+[sub_resource type="Resource" id="Resource_ak4i2"]
+script = ExtResource("2_070rk")
+name = "garlic"
+can_drop = false
+container = ""
+containerPosition = 0
+metadata/_custom_type_script = "uid://bhds83bt3wpwb"
+
+[node name="Playground" type="Node2D"]
+script = ExtResource("1_rxwqw")
+Items = Array[ExtResource("2_070rk")]([SubResource("Resource_8luvy"), SubResource("Resource_ak4i2")])
+
+[node name="frog" parent="." instance=ExtResource("2_v52pn")]
+position = Vector2(-110, -31)
+
+[node name="frog2" parent="." instance=ExtResource("2_v52pn")]
+position = Vector2(-6, 5)
+
+[node name="frog3" parent="." instance=ExtResource("2_v52pn")]
+position = Vector2(144, 1)
+
+[node name="player" parent="." instance=ExtResource("4_r4djr")]
+position = Vector2(67, -32)
+
+[node name="Inventory" parent="." instance=ExtResource("6_pewrh")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)

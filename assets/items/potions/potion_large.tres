@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=3 format=3 uid="uid://hcdbi16em5de"]
+
+[ext_resource type="Script" uid="uid://bhds83bt3wpwb" path="res://scripts/Resource/ItemResource.gd" id="1_g0iq1"]
+[ext_resource type="Texture2D" uid="uid://bniiukbjv60c7" path="res://gfx/potion_large.png" id="2_g0iq1"]
+
+[resource]
+script = ExtResource("1_g0iq1")
+name = "Large  potion"
+texture = ExtResource("2_g0iq1")
+can_drop = true
+container = ""
+containerPosition = 0
+metadata/_custom_type_script = "uid://bhds83bt3wpwb"

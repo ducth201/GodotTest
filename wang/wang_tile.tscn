@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsm48oyku43p2"]
+
+[ext_resource type="Script" uid="uid://lq8vpovqkq7x" path="res://wang/WangTile.gd" id="1_ha1bt"]
+[ext_resource type="Script" uid="uid://dnoansaerldsg" path="res://scripts/Resource/WangTileResource.gd" id="2_d1g48"]
+
+[sub_resource type="Resource" id="Resource_3vnwf"]
+resource_local_to_scene = true
+script = ExtResource("2_d1g48")
+top = 0
+right = 0
+bottom = 0
+left = 0
+location = Vector2i(0, 0)
+TileType = 0
+
+[node name="WangTile" type="Node2D"]
+script = ExtResource("1_ha1bt")
+res = SubResource("Resource_3vnwf")

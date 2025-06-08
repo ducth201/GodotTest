@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=3 uid="uid://wjpp7uvof0j8"]
+
+[ext_resource type="Texture2D" uid="uid://6mgijqt4g0br" path="res://gfx/pickup_bg.png" id="1_av8n3"]
+[ext_resource type="Script" uid="uid://dm23p0f1s2sck" path="res://assets/inventory/inventory.gd" id="2_u4acj"]
+[ext_resource type="PackedScene" uid="uid://0g1gu0tmfn6v" path="res://assets/inventory/item_slot/item_slot.tscn" id="3_lccwh"]
+[ext_resource type="Resource" uid="uid://b3j1vdvi1qvtq" path="res://assets/items/potions/potion_small.tres" id="4_u4acj"]
+[ext_resource type="Resource" uid="uid://did15747hlmsm" path="res://assets/items/potions/potion_medium.tres" id="5_pxr43"]
+[ext_resource type="Resource" uid="uid://hcdbi16em5de" path="res://assets/items/potions/potion_large.tres" id="6_av8n3"]
+
+[node name="Inventory" type="TextureRect"]
+visibility_layer = 2
+texture_filter = 1
+offset_right = 162.0
+offset_bottom = 24.0
+texture = ExtResource("1_av8n3")
+stretch_mode = 1
+script = ExtResource("2_u4acj")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_right = 78.0
+offset_bottom = 12.0
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 7
+
+[node name="ItemSlot1" parent="GridContainer" instance=ExtResource("3_lccwh")]
+layout_mode = 2
+item = ExtResource("4_u4acj")
+
+[node name="ItemSlot2" parent="GridContainer" instance=ExtResource("3_lccwh")]
+layout_mode = 2
+item = ExtResource("5_pxr43")
+
+[node name="ItemSlot3" parent="GridContainer" instance=ExtResource("3_lccwh")]
+layout_mode = 2
+item = ExtResource("6_av8n3")
+
+[node name="ItemSlot4" parent="GridContainer" instance=ExtResource("3_lccwh")]
+layout_mode = 2
+
+[node name="ItemSlot5" parent="GridContainer" instance=ExtResource("3_lccwh")]
+layout_mode = 2
+
+[node name="ItemSlot6" parent="GridContainer" instance=ExtResource("3_lccwh")]
+layout_mode = 2
+
+[node name="ItemSlot7" parent="GridContainer" instance=ExtResource("3_lccwh")]
+layout_mode = 2

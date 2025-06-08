@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://wjpp7uvof0j8"]
+
+[ext_resource type="Texture2D" uid="uid://bkns3ww0s1w4n" path="res://assets/inventory/inventory_texture.png" id="1_qw0r6"]
+[ext_resource type="Script" uid="uid://dm23p0f1s2sck" path="res://assets/inventory/inventory.gd" id="2_u4acj"]
+[ext_resource type="PackedScene" uid="uid://0g1gu0tmfn6v" path="res://assets/inventory/item_slot/item_slot.tscn" id="3_lccwh"]
+[ext_resource type="Resource" uid="uid://dm6x2bso512ss" path="res://assets/items/food/garlic.tres" id="4_u4acj"]
+[ext_resource type="Resource" uid="uid://cyxmee8pdlcwq" path="res://assets/items/containers/chest.tres" id="5_17htj"]
+[ext_resource type="Resource" uid="uid://wwtxpbbn1n3d" path="res://assets/items/potions/potion.tres" id="6_pxr43"]
+
+[node name="Inventory" type="TextureRect"]
+texture_filter = 1
+offset_right = 442.0
+offset_bottom = 64.0
+texture = ExtResource("1_qw0r6")
+stretch_mode = 1
+script = ExtResource("2_u4acj")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_constants/h_separation = -1
+theme_override_constants/v_separation = -1
+columns = 7
+
+[node name="ItemSlot1" parent="GridContainer" instance=ExtResource("3_lccwh")]
+layout_mode = 2
+item = ExtResource("4_u4acj")
+
+[node name="ItemSlot2" parent="GridContainer" instance=ExtResource("3_lccwh")]
+layout_mode = 2
+item = ExtResource("5_17htj")
+
+[node name="ItemSlot3" parent="GridContainer" instance=ExtResource("3_lccwh")]
+layout_mode = 2
+item = ExtResource("6_pxr43")
+
+[node name="ItemSlot4" parent="GridContainer" instance=ExtResource("3_lccwh")]
+layout_mode = 2
+
+[node name="ItemSlot5" parent="GridContainer" instance=ExtResource("3_lccwh")]
+layout_mode = 2
+
+[node name="ItemSlot6" parent="GridContainer" instance=ExtResource("3_lccwh")]
+layout_mode = 2
+
+[node name="ItemSlot7" parent="GridContainer" instance=ExtResource("3_lccwh")]
+layout_mode = 2

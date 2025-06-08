@@ -1,0 +1,409 @@
+[gd_scene load_steps=28 format=3 uid="uid://tha5nd1itpbm"]
+
+[ext_resource type="Script" path="res://scripts/Map.gd" id="1_1namu"]
+[ext_resource type="Texture2D" uid="uid://bj3ji1ety7wyu" path="res://gfx/tilemaps/wang_abstract.png" id="2_g07rx"]
+[ext_resource type="Texture2D" uid="uid://03evwwsb2kvq" path="res://wang/Dungeon_Tileset.png" id="2_xn0f1"]
+[ext_resource type="PackedScene" uid="uid://dsm48oyku43p2" path="res://wang/wang_tile.tscn" id="3_jiiq0"]
+[ext_resource type="Script" path="res://scripts/Resource/WangTileResource.gd" id="4_j04mj"]
+[ext_resource type="Texture2D" uid="uid://jt0ummrsi6c3" path="res://gfx/tilemaps/input_1.png" id="6_7ldfm"]
+[ext_resource type="Texture2D" uid="uid://8df5lu3k5c7j" path="res://gfx/tilemaps/bg.png" id="7_if3vl"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_utwrx"]
+texture = ExtResource("2_xn0f1")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_ano24"]
+sources/0 = SubResource("TileSetAtlasSource_utwrx")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1a2rq"]
+texture = ExtResource("2_g07rx")
+use_texture_padding = false
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:0/0 = 0
+3:1/0 = 0
+3:2/0 = 0
+3:3/0 = 0
+3:4/0 = 0
+3:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_enpet"]
+sources/0 = SubResource("TileSetAtlasSource_1a2rq")
+
+[sub_resource type="Resource" id="Resource_qdlgl"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 1
+right = 0
+bottom = 0
+left = 0
+location = Vector2i(0, 0)
+TileType = 0
+
+[sub_resource type="Resource" id="Resource_l1p3k"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 0
+right = 1
+bottom = 0
+left = 0
+location = Vector2i(1, 0)
+TileType = 1
+
+[sub_resource type="Resource" id="Resource_nqafb"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 0
+right = 0
+bottom = 1
+left = 0
+location = Vector2i(2, 0)
+TileType = 2
+
+[sub_resource type="Resource" id="Resource_3vq7l"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 0
+right = 0
+bottom = 0
+left = 1
+location = Vector2i(3, 0)
+TileType = 3
+
+[sub_resource type="Resource" id="Resource_wvipy"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 1
+right = 1
+bottom = 0
+left = 0
+location = Vector2i(0, 1)
+TileType = 4
+
+[sub_resource type="Resource" id="Resource_pi5ui"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 0
+right = 1
+bottom = 1
+left = 0
+location = Vector2i(1, 1)
+TileType = 5
+
+[sub_resource type="Resource" id="Resource_ptnnb"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 0
+right = 0
+bottom = 1
+left = 1
+location = Vector2i(2, 1)
+TileType = 6
+
+[sub_resource type="Resource" id="Resource_7ntgv"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 1
+right = 0
+bottom = 0
+left = 1
+location = Vector2i(3, 1)
+TileType = 7
+
+[sub_resource type="Resource" id="Resource_fw1pc"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 1
+right = 1
+bottom = 1
+left = 0
+location = Vector2i(0, 2)
+TileType = 8
+
+[sub_resource type="Resource" id="Resource_lyjlr"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 0
+right = 1
+bottom = 1
+left = 1
+location = Vector2i(1, 2)
+TileType = 9
+
+[sub_resource type="Resource" id="Resource_rtimt"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 1
+right = 0
+bottom = 1
+left = 1
+location = Vector2i(2, 2)
+TileType = 10
+
+[sub_resource type="Resource" id="Resource_jrmva"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 1
+right = 1
+bottom = 0
+left = 1
+location = Vector2i(3, 2)
+TileType = 11
+
+[sub_resource type="Resource" id="Resource_18wfh"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 1
+right = 0
+bottom = 1
+left = 0
+location = Vector2i(0, 3)
+TileType = 12
+
+[sub_resource type="Resource" id="Resource_6i57a"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 0
+right = 1
+bottom = 0
+left = 1
+location = Vector2i(1, 3)
+TileType = 13
+
+[sub_resource type="Resource" id="Resource_t0jwi"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 0
+right = 0
+bottom = 0
+left = 0
+location = Vector2i(2, 3)
+TileType = 14
+
+[sub_resource type="Resource" id="Resource_fix8v"]
+resource_local_to_scene = true
+script = ExtResource("4_j04mj")
+top = 0
+right = 0
+bottom = 0
+left = 0
+location = Vector2i(3, 3)
+TileType = 15
+
+[node name="Map" type="Node2D"]
+script = ExtResource("1_1namu")
+
+[node name="TileMap_sample" type="TileMap" parent="."]
+visible = false
+tile_set = SubResource("TileSet_ano24")
+format = 2
+
+[node name="TileMap" type="TileMap" parent="."]
+visible = false
+position = Vector2(0, 80)
+tile_set = SubResource("TileSet_enpet")
+format = 2
+layer_0/name = "Base"
+
+[node name="Tiles" type="Node" parent="."]
+
+[node name="WangTile1" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_qdlgl")
+
+[node name="WangTile2" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_l1p3k")
+
+[node name="WangTile3" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_nqafb")
+
+[node name="WangTile4" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_3vq7l")
+
+[node name="WangTile5" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_wvipy")
+
+[node name="WangTile6" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_pi5ui")
+
+[node name="WangTile7" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_ptnnb")
+
+[node name="WangTile8" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_7ntgv")
+
+[node name="WangTile9" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_fw1pc")
+
+[node name="WangTile10" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_lyjlr")
+
+[node name="WangTile11" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_rtimt")
+
+[node name="WangTile12" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_jrmva")
+
+[node name="WangTile13" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_18wfh")
+
+[node name="WangTile14" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_6i57a")
+
+[node name="WangTile15" parent="Tiles" instance=ExtResource("3_jiiq0")]
+visible = false
+res = SubResource("Resource_t0jwi")
+
+[node name="WangTile16" parent="Tiles" instance=ExtResource("3_jiiq0")]
+res = SubResource("Resource_fix8v")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 199.0
+offset_right = 244.0
+offset_bottom = 31.0
+action_mode = 0
+text = "start"
+
+[node name="input" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 43.0
+offset_bottom = 43.0
+texture = ExtResource("6_7ldfm")
+
+[node name="output" type="TextureRect" parent="."]
+offset_left = 5.0
+offset_top = 52.0
+offset_right = 404.0
+offset_bottom = 317.0
+texture = ExtResource("7_if3vl")
+stretch_mode = 2

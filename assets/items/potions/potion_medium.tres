@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=3 format=3 uid="uid://did15747hlmsm"]
+
+[ext_resource type="Script" uid="uid://bhds83bt3wpwb" path="res://scripts/Resource/ItemResource.gd" id="1_reqbv"]
+[ext_resource type="Texture2D" uid="uid://bvx3pjym3r3dp" path="res://gfx/potion_medium.png" id="2_reqbv"]
+
+[resource]
+script = ExtResource("1_reqbv")
+name = "Medium  potion"
+texture = ExtResource("2_reqbv")
+can_drop = true
+container = ""
+containerPosition = 0
+metadata/_custom_type_script = "uid://bhds83bt3wpwb"

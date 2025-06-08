@@ -1,0 +1,57 @@
+[gd_scene load_steps=10 format=3 uid="uid://dgp3uwamvpynq"]
+
+[ext_resource type="Script" path="res://scripts/Level.gd" id="1_rxwqw"]
+[ext_resource type="Texture2D" path="res://gfx/tilemaps/input_1.png" id="2_uhuvm"]
+[ext_resource type="PackedScene" uid="uid://b1sspjte7g4oh" path="res://characters/frog/frog.tscn" id="2_v52pn"]
+[ext_resource type="Script" path="res://scripts/Resource/CharacterResource.gd" id="3_gq548"]
+[ext_resource type="PackedScene" uid="uid://v2gpawn82cg5" path="res://characters/player/player.tscn" id="4_r4djr"]
+[ext_resource type="PackedScene" uid="uid://tha5nd1itpbm" path="res://scenes/Map.tscn" id="5_sp6uq"]
+
+[sub_resource type="Resource" id="Resource_l3fu7"]
+resource_local_to_scene = true
+script = ExtResource("3_gq548")
+name = "anotherFrog"
+health = 50
+strength = 5
+speed = 0
+
+[sub_resource type="Resource" id="Resource_7c3it"]
+resource_local_to_scene = true
+script = ExtResource("3_gq548")
+name = "anotherFrog"
+health = 50
+strength = 5
+speed = 0
+
+[sub_resource type="Resource" id="Resource_6h78a"]
+resource_local_to_scene = true
+script = ExtResource("3_gq548")
+name = "anotherFrog"
+health = 50
+strength = 5
+speed = 0
+
+[node name="Playground" type="Node2D"]
+script = ExtResource("1_rxwqw")
+width = null
+height = null
+src = ExtResource("2_uhuvm")
+
+[node name="Map" parent="." instance=ExtResource("5_sp6uq")]
+texture_filter = 1
+scale = Vector2(2, 2)
+
+[node name="player" parent="." instance=ExtResource("4_r4djr")]
+position = Vector2(560, 331)
+
+[node name="frog" parent="." instance=ExtResource("2_v52pn")]
+position = Vector2(314, 150)
+_resource = SubResource("Resource_l3fu7")
+
+[node name="frog2" parent="." instance=ExtResource("2_v52pn")]
+position = Vector2(446, 150)
+_resource = SubResource("Resource_7c3it")
+
+[node name="frog3" parent="." instance=ExtResource("2_v52pn")]
+position = Vector2(596, 146)
+_resource = SubResource("Resource_6h78a")

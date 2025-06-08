@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://w0uush8kqy8f"]
+
+[ext_resource type="Script" uid="uid://ugpea0qyupeq" path="res://assets/characters/spider/spider.gd" id="1_tkv2i"]
+[ext_resource type="Resource" uid="uid://c5nfg8f143dc1" path="res://assets/characters/spider/spider.tres" id="2_46hi6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kqlgv"]
+
+[node name="Spider" type="Area2D"]
+script = ExtResource("1_tkv2i")
+_resource = ExtResource("2_46hi6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_kqlgv")

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CharacterResource" load_steps=2 format=3 uid="uid://c5nfg8f143dc1"]
+
+[ext_resource type="Script" uid="uid://c3iqvw2xch4s" path="res://scripts/Resource/CharacterResource.gd" id="1_navkh"]
+
+[resource]
+script = ExtResource("1_navkh")
+name = ""
+health = 100
+strength = 12
+speed = 0
